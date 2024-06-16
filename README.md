@@ -1,9 +1,9 @@
 # ⏳ ChatLog: Recording and Analysing ChatGPT Across Time
 
 # Overview
-This repository stores data and code for the paper `ChatLog: Recording and Analysing ChatGPT Across Time` [[abs](https://arxiv.org/abs/2304.14106)][[pdf](https://arxiv.org/pdf/2304.14106.pdf)].
+This repository stores data and code for the paper `ChatLog: Recording and Analysing ChatGPT Across Time` 
 
-While there are abundant researches about evaluating ChatGPT on natural language understanding and generation tasks, few studies have investigated how ChatGPT's behavior changes over time. In this paper, we collect a coarse-to-fine temporal dataset called ChatLog, consisting of two parts that update monthly and daily: **ChatLog-Monthly** is a dataset of **38,730** question-answer pairs collected every month including questions from both the reasoning and classification tasks. **ChatLog-Daily**, on the other hand, consists of ChatGPT's responses to **1000** identical questions for long-form generation **every day**. We conduct comprehensive automatic and human evaluation to provide the evidence for the existence of ChatGPT evolving patterns. We further analyze the unchanged characteristics of ChatGPT over time by extracting its knowledge and linguistic features. We find some stable features to improve the robustness of a RoBERTa-based detector on new versions of ChatGPT. We will continuously maintain our project on GitHub.
+ChatGPT has achieved great success and can be considered to have acquired an infrastructural status. There are abundant works for evaluating ChatGPT on benchmarks. However, existing benchmarks encounter two challenges: (1) Disregard for periodical evaluation and (2) Lack of fine-grained features. In this paper, we construct ChatLog, an ever-updating dataset with large-scale records of diverse long-form ChatGPT responses for 21 NLP benchmarks from March, 2023 to now. We conduct a comprehensive performance evaluation to find that most capabilities of ChatGPT improve over time except for some abilities, and there exists a step-wise evolving pattern of ChatGPT.  We further analyze the inherent characteristics of ChatGPT by extracting the knowledge and linguistic features. We find some stable features that stay unchanged and apply them on the detection of ChatGPT-generated texts to improve the robustness of cross-version detection. We will continuously maintain our project at  GitHub.
 
 ![](./config/model_system_v3.png)
 
@@ -11,9 +11,9 @@ While there are abundant researches about evaluating ChatGPT on natural language
 
 # Data
 
-We release our data at [tsinghua cloud](https://cloud.tsinghua.edu.cn/d/733684efbec84cbb8c52/).
+We release our data at [cloud](https://cloud.tsinghua.edu.cn/d/733684efbec84cbb8c52/).
 
-If you have any questions about the data, please raise a issue or contact us by email: tsq22@mails.tsinghua.edu.cn
+If you have any questions about the data, please raise a issue
 
 Now the category is as following, you can download them by clicking the link:
 
@@ -103,14 +103,3 @@ sh shells/draw_eval_corr_v1.sh
    - Then use `./shells/knowledge_analysis.ipynb` and `./shells/temporal_analysis.ipynb` to draw every figure.
 
    
-# Citation
-If you find our work useful, please cite:
-
-```
-@article{tu2023chatlog,
-  title={ChatLog: Recording and Analyzing ChatGPT Across Time},
-  author={Tu, Shangqing and Li, Chunyang and Yu, Jifan and Wang, Xiaozhi and Hou, Lei and Li, Juanzi},
-  journal={arXiv preprint arXiv:2304.14106},
-  year={2023}
-}
-```
